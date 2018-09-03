@@ -1,0 +1,27 @@
+{
+  "name": "back_end",
+  "version": "1.0.0",
+  "description": "The back end of a Twitter interface.",
+  "main": "app.js",
+  "scripts": {
+    "test": "tst"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joebegley15/twitter_interface.git"
+  },
+  "author": "Joe Begley",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joebegley15/twitter_interface/issues"
+  },
+  "homepage": "https://github.com/joebegley15/twitter_interface#readme",
+  "dependencies": {
+    "dotenv": "^6.0.0",
+    "express": "^4.16.3",
+    "http": "0.0.0",
+    "q": "^1.5.1",
+    "twit": "^2.2.11",
+    "twitter": "^1.7.1"
+  }
+}
