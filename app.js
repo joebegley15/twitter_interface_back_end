@@ -1,6 +1,8 @@
 // Configure the Express file
 const express = require('express')
-const app = express();
+var cors = require('cors');
+var app = express();
+app.use(cors());
 // Configure HTTP
 const http = require('http');
 // Require the file that handles interactions with the Twitter API
