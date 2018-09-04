@@ -1,6 +1,9 @@
 {
   "name": "back_end",
   "version": "1.0.0",
+  "engines": {
+    "node": "10.5.0"
+  },
   "description": "The back end of a Twitter interface.",
   "main": "app.js",
   "scripts": {
