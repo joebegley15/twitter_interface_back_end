@@ -6,7 +6,7 @@ const http = require('http');
 // Require the file that handles interactions with the Twitter API
 const twt = require('./src/twitter');
 // Define varaibles
-let count, port = 5050;
+let count;
 
 app.get('/', function(req,res){
 	res.send('Hello World');
@@ -29,6 +29,7 @@ app.get('/api/tagTweets/:tag/:count',function(req,res){
 	}
 	ma();
 })
-app.listen(port,function(){
-	console.log('Listening on port #' + port);
-})
+var server = app.listen(process.env.PORT || 5000, function () {
+  var port = server.address().port;
+  console.log("Express is working on port " + port);
+});
