@@ -8,7 +8,7 @@ const pullTweetsFromUser = function(handle,tweetCount){
 	let tweets;
 	return new Promise(function(resolve, reject) {
 		T.get("statuses/user_timeline", {screen_name:handle, count:tweetCount}, function(err, data, response) {
-			tweets = data.map(data => data.text);
+			tweets = data;
 			resolve(tweets);
 		})
 		return tweets;
