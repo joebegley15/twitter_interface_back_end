@@ -18,7 +18,7 @@ const pullTweetsByHashTag = function(hashTag, tweetCount) {
 	let tweets;
 	return new Promise(function(resolve, reject) {
 		T.get('search/tweets', { q: hashTag, count: tweetCount }, function(err, data, response) {
-			tweets = data['statuses'].map(data => data.text);
+			tweets = data;
 			resolve(tweets);
 		})
 		return tweets;
